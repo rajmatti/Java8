@@ -14,6 +14,8 @@ class Arithmetic {
 	}
 }
 
+//The BiFunction Interface is a part of the java. util. function package which has been introduced since Java 8,
+//to implement functional programming in Java. 
 public class ReferenceToStaticMethod2 {
 	public static void main(String[] args) {
 		BiFunction<Integer, Integer, Integer> adder1 = Arithmetic::add;
