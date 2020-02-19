@@ -1,0 +1,25 @@
+interface IAvarage {  
+    double avg(int[] array);  
+}  
+public class LambdaMultipleStatements {
+
+public static void main(String[] args) {
+
+IAvarage withLambda = (withLambdaArray) -> {
+			double sum = 0;
+			int arraySize = withLambdaArray.length;
+			
+			System.out.println("arraySize : " + arraySize);
+			for (int i = 0; i < withLambdaArray.length; i++) {
+				sum = sum + withLambdaArray[i];	
+			}
+			System.out.println("sum : " + sum);
+			
+			return (sum/ arraySize);
+		};
+		
+		int[] withLambdaArray = {1,4,6,8,9};
+		System.out.println(withLambda.avg(withLambdaArray)); 
+	}
+	
+}
